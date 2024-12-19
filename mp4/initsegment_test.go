@@ -238,3 +238,15 @@ func TestInitTweakSingleTrakLive(t *testing.T) {
 		t.Errorf(`Did not get error %q but %q"`, wantedErrMsg, err)
 	}
 }
+
+func TestInitApple(t *testing.T) {
+	goldenAssetPath := "testdata/apple_adv_dv_atmos.mp4"
+	f, err := parseInitFile(goldenAssetPath)
+	if err != nil {
+		t.Error(err)
+	}
+
+	if f == nil {
+		t.Error("Failed to parse init file")
+	}
+}
