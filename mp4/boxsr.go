@@ -128,6 +128,8 @@ func init() {
 		"vdep":    DecodeTrefTypeSR,
 		"vlab":    DecodeVlabSR,
 		"vmhd":    DecodeVmhdSR,
+		"vp09":    DecodeVisualSampleEntrySR,
+		"vpcC":    DecodeVpcCSR,
 		"vplx":    DecodeTrefTypeSR,
 		"vsid":    DecodeVsidSR,
 		"vtta":    DecodeVttaSR,
